@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ChartSvg, { ChartDataPoint } from './ChartSvg.vue'
-import ChartSvgTooltip from './ChartSvgTooltip.vue'
-import ChartSvgTooltipRwd from './ChartSvgTooltipRwd.vue'
-import ChartSvgTooltipRwdSeries, { ChartSeries } from './ChartSvgTooltipRwdSeries.vue'
+import ChartSvg, { ChartDataPoint } from './charts/ChartSvg.vue'
+import ChartSvgTooltip from './charts/ChartSvgTooltip.vue'
+import ChartSvgTooltipRwd from './charts/ChartSvgTooltipRwd.vue'
+import ChartSvgTooltipRwdSeries, { ChartSeries } from './charts/ChartSvgTooltipRwdSeries.vue'
 
 const mockData = ref<ChartDataPoint[]>([
 	{ label: 'Styczeń', value: 35 },
