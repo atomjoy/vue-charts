@@ -2,48 +2,6 @@
 
 Minimal SVG and shadcn vue charts.
 
-## Tailwind
-
-```css
-/* Custom colors */
-@theme {
-	/* Accent */
-	/* --color-accent: #7ee100; */
-
-	/* Własny kolor text-custom, bg-custom border-custom, ... */
-	--color-custom: #fdc50a;
-	--color-custom-txt: #ffffff;
-
-	/* Dla hovera:text-custom-dark-txt, hovera:bg-custom-dark */
-	--color-custom-dark: #fed317;
-	--color-custom-dark-txt: #000000;
-
-	/* Chart colors (shadcn) */
-	--color-chart-1: #0099ff;
-	--color-chart-2: #fdc50a;
-	--color-chart-3: #7ee100;
-}
-
-/* Custom animations, shadows */
-@theme {
-	@keyframes shake {
-		0%,
-		100% {
-			transform: translateX(0);
-		}
-		25% {
-			transform: translateX(-4px) translateY(-5px);
-		}
-		75% {
-			transform: translateX(4px) translateX(5px);
-		}
-	}
-
-	--animate-shake: shake 0.3s ease-in-out infinite;
-
-	--shadow-custom: 0 10px 25px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
-}
-```
 ## Data
 
 ```js
@@ -97,4 +55,47 @@ const myMultiSeriesData = ref<ChartSeries[]>([
 		],
 	},
 ])
+```
+
+## Tailwind
+
+```css
+/* Custom colors */
+@theme {
+	/* Accent */
+	/* --color-accent: #7ee100; */
+
+	/* Własny kolor text-custom, bg-custom border-custom, ... */
+	--color-custom: #fdc50a;
+	--color-custom-txt: #ffffff;
+
+	/* Dla hovera:text-custom-dark-txt, hovera:bg-custom-dark */
+	--color-custom-dark: #fed317;
+	--color-custom-dark-txt: #000000;
+
+	/* Chart colors (shadcn) */
+	--color-chart-1: #0099ff;
+	--color-chart-2: #fdc50a;
+	--color-chart-3: #7ee100;
+}
+
+/* Custom animations, shadows */
+@theme {
+	@keyframes shake {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+		25% {
+			transform: translateX(-4px) translateY(-5px);
+		}
+		75% {
+			transform: translateX(4px) translateX(5px);
+		}
+	}
+
+	--animate-shake: shake 0.3s ease-in-out infinite;
+
+	--shadow-custom: 0 10px 25px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
+}
 ```
