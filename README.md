@@ -1,6 +1,6 @@
-# Vue Chart
+# Vue Charts
 
-Minimal SVG and shadcn vue charts.
+Minimal SVG (rwd) and shadcn (rwd) vue charts.
 
 ## Data
 
