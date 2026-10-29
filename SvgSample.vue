@@ -59,6 +59,7 @@ const myMultiSeriesData = ref<ChartSeries[]>([
 
 <template>
 	<section>
+		<!-- Fixed width -->
 		<ChartSvg
 			:data="mockData"
 			type="bar"
@@ -74,6 +75,7 @@ const myMultiSeriesData = ref<ChartSeries[]>([
 			barColor="fill-lime-500/80 hover:fill-lime-500"
 		/>
 
+		<!-- Rwd width 16/9 aspect ratio -->
 		<ChartSvgTooltipRwd
 			:data="mockData"
 			:smooth="true"
