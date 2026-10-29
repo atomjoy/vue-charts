@@ -99,3 +99,7 @@ const myMultiSeriesData = ref<ChartSeries[]>([
 	--shadow-custom: 0 10px 25px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
 }
 ```
+
+## Svg
+
+<img src="https://raw.githubusercontent.com/atomjoy/vue-charts/refs/heads/main/charts.webp" width="100%"/>
