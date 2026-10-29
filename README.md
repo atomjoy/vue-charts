@@ -23,6 +23,26 @@ Minimal SVG and shadcn vue charts.
 	--color-chart-2: #fdc50a;
 	--color-chart-3: #7ee100;
 }
+
+/* Custom animations, shadows */
+@theme {
+	@keyframes shake {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+		25% {
+			transform: translateX(-4px) translateY(-5px);
+		}
+		75% {
+			transform: translateX(4px) translateX(5px);
+		}
+	}
+
+	--animate-shake: shake 0.3s ease-in-out infinite;
+
+	--shadow-custom: 0 10px 25px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
+}
 ```
 ## Data
 
